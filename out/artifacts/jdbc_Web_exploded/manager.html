@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <style type="text/css">
+    .action{
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+    }
+  </style><!--用css设置位置-->
+    <style type="text/css">
+        .photo{
+            background: url("images/manager.jpeg");
+            background-size:100%,100%;
+        }
+    </style><!--背景图片-->
+    <style>
+        p{text-align: center;color: chartreuse}
+    </style><!--用css定义表格中的文字属性-->
+    <style type="text/css">
+        .color{
+            color: chartreuse;
+        }
+    </style><!--设置字体颜色-->
+    <title>Title</title>
+</head>
+<body class="photo">
+<p style="font-size: 30px" >欢迎来到管理员界面</p>
+<form class="action" action="Settle.jsp" method="post">
+    <table>
+        <tr><td class="color" >结</td><td class="color">账</td><td class="color">桌</td><td class="color">号</td><td><input type="text" name="desk" id="desk1"></td></tr>
+        <tr><td colspan="4" ><input type="submit" value="提交" name="present" id="present1"></td></tr>
+    </table>
+</form>
+<br>
+<table>
+    <tr><td>
+
+
+    </td></tr>
+</table>
+<form class="action" action="menuTest.jsp" method="post">
+    <tr><td> <input type="submit" value="查看菜单" name="menu" id="menuone"></td>
+    </tr>
+</form>
+<form action="mysqlComment.jsp" method="post" class="action">
+    <input type="submit" value="查看评论">
+</form>
+</body>
+</html>

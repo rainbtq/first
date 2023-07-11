@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style >
+    .action{
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+    }
+  </style><!--用css定义class属性来控制位置-->
+  <style >
+    .photo{
+      background: url("images/outone.jpg");
+      background-size:100%,100%;
+    }
+  </style><!-- 背景图片-->
+</head>
+<body class="photo">
+<embed src="music/music.mp3" type="audio/mpeg" loop="true" hidden="hidden"><!--背景音乐-->
+<p class="action" style="font-size: 20px">欢迎光临</p>
+<br>
+<br>
+<br>
+<br>
+<form action="InputTset.jsp" method="post" >
+  <table bgcolor="#f0f8ff" class="action">
+    <tr>
+      <td >账号</td><td><input type="text" name="account" id="account" ></td>
+    </tr>
+    <tr>
+      <td>密码</td><td><input type="password" name="password" id="password" ></td>
+    </tr>
+    <tr >
+      <td align="center" colspan="2"><input type="submit" value="登录" ></td>
+    </tr>
+  </table>
+</form>
+<form class="action" action="user.jsp" method="post"><input type="submit" value="客人请点击" ></form>
+</body>
+</html>
